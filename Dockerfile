@@ -1,5 +1,4 @@
-# Use the official Node.js 14 image as the base image
-FROM node:20.12.0
+FROM node
 
 WORKDIR /app
 COPY . .
