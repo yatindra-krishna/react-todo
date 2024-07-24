@@ -1,5 +1,5 @@
 # Use the official Node.js 14 image as the base image
-FROM node:19
+FROM node:20.12.0
 
 # Set the working directory in the container
 WORKDIR /app
@@ -23,4 +23,4 @@ RUN npm run build
 EXPOSE 5173
 
 # Start Nginx when the container launches
-CMD ["node","App.js"]
+CMD ["node","App.jsx"]
