@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json .
 RUN npm i
 COPY . .
-FROM node:20-bookworm-slim
+FROM node:20-alpine
 WORKDIR /app
 COPY --from=builder /app .
 EXPOSE 5173
